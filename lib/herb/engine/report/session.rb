@@ -194,8 +194,8 @@ module Herb
         end
 
         #: (Symbol) { () -> untyped } -> untyped
-        def channel(name, &)
-          report.channel(name, &)
+        def channel(name, &blk)
+          report.channel(name, &blk)
         end
 
         #: () -> Array[Herb::Diagnostic]
